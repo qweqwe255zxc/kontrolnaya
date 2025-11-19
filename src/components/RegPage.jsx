@@ -43,6 +43,7 @@ const RegPage = ({ users, setUsers, setCurrentPage, setCurrentUser }) => {
         )) {
             alert('login уже существует')
         } else {
+            alert('Пользователь добавлен')
             setUsers(prev => [...prev, canditate])
             console.log('пользователь добавлен', users);
             setToLocalStorage('users', users)

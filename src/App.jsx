@@ -10,14 +10,15 @@ import './App.css'
 function App() {
 
   const [currentPage, setCurrentPage] = useState('regPage');
-  const [users, setUsers] = useState(() => {
+  const [users, setUsers] = useState(
+    () => {
     return getFromLocalStorage('users') || [
-      {
-        firstName: 'asd',
-        secondName: 'asd',
-        login: 'asd',
-        password: 'asdasdasd'
-      }
+      // {
+      //   firstName: 'asd',
+      //   secondName: 'asd',
+      //   login: 'asd',
+      //   password: 'asdasdasd'
+      // }
     ];
   });
   const [currentUser, setCurrentUser] = useState();
